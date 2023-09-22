@@ -10,15 +10,15 @@ Um aplicativo que, ao receber coordenadas de um ponto qualquer do Brasil, determ
 ## :gear: Como rodar o projeto
 ```bash
 # Clone este repositorio
-$ https://github.com/kendy-karakawa/Porto-prox.git
+$ git clone https://github.com/kendy-karakawa/Porto-prox.git
 # Acesse a pasta Porto-prox
-$ cd Porto-pro
-# Instale as dependencias 
+$ cd Porto-prox
+# Instale as dependências 
 $ npm install
 # Configure o .env
-$ de acordo com .env.exemple
-# No arquivo maps.mjs insira a cordenada (latitude, longitude) no formato string na variavel "origin".
+$ cp .env.example .env
+# No arquivo maps.mjs, insira a coordenada (latitude, longitude) no formato de string na variável origin.
 $ const origin = "-15.46444753932978, -44.5272101693887"
-# Rode o arquivo 
+# Rode o arquivo e no console irá aparecer a resposta:
 $ node maps.mjs
 ```
