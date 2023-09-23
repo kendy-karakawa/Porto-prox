@@ -7,6 +7,17 @@ Um aplicativo que, ao receber coordenadas de um ponto qualquer do Brasil, determ
 
 - JavaScript
 
+## GOOGLE API KEY
+
+- Para rodar este projeto será necessária uma API KEY.
+- Entre no site "https://cloud.google.com/?hl=pt-BR";
+- Acesse o console;
+- Crie um novo projeto;
+- Na biblioteca de API, selecione a Distance Matrix API e habilite-a;
+- Na seção de credenciais, selecione a opção criar uma credencial;
+- Selecione a API KEY.
+
+
 ## :gear: Como rodar o projeto
 ```bash
 # Clone este repositorio
@@ -16,9 +27,11 @@ $ cd Porto-prox
 # Instale as dependências 
 $ npm install
 # Configure o .env
-$ cp .env.example .env
+$ cp .env.example .env 
+$ Abra o arquivo .env e insira sua API KEY 
 # No arquivo maps.mjs, insira a coordenada (latitude, longitude) no formato de string na variável origin.
 $ const origin = "-15.46444753932978, -44.5272101693887"
 # Rode o arquivo e no console irá aparecer a resposta:
 $ node maps.mjs
 ```
+
